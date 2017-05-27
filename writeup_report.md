@@ -24,7 +24,8 @@ The goals / steps of this project are the following:
 
 My pipeline consisted of 6 steps. 1) I converted the images to grayscale. 2) I Gaussian-smoothed the gray image. 3) I detected the edges using Canny. 4) I selected edges only in the region-of-interest. 5) I detected lane lines using Hough Transformation. 6) I combined the lane lines with the original image as output. 
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function in the following steps.
+1) I defined 
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 

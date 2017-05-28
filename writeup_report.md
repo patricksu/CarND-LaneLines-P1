@@ -35,9 +35,11 @@ Scenarios below would cause pipeline failure.
 2) A different camera. In this case, the edge detection thresholds and Hough transformation parameters would have to change. 
 3) City traffic with curbs. The curbs might also be identified as lane lines.
 4) Faded lane lines, changing lighting (shadows, darkness, etc.)
+5) Curvetures. 
 
 The current pipeline has parameters that need to be fine-tuned for different driving scenarios. It is impossible to exhaust every single scenario to get the parameter values, hard-code them, and adjust accordingly. Thus we need a better approach for lane-line detections. 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be running a clustering algorithm to find the lane-line segments in an un-supervised way. Another way of doing this is training a Convolution Neural Network to detect lane lines, using images with annotated lane lines. 
+A possible improvement would be running a clustering algorithm to find the lane-line segments in an un-supervised way. Fitting a second-order polynomial to represent the lane lines would work better for curvatures. But this will need more data points.
+Another way of doing this is training a Convolution Neural Network to detect lane lines, using images with annotated lane lines. 

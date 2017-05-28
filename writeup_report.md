@@ -20,7 +20,8 @@ The goals / steps of this project are the following:
 My pipeline consisted of 6 steps. 1) I converted the images to grayscale. 2) I Gaussian-smoothed the gray image. 3) I detected the edges using Canny. 4) I selected edges only in the region-of-interest. 5) I detected lane lines using Hough Transformation. 6) I combined the lane lines with the original image as output. 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function in the following steps and the figure below.
-<img src="report_images/Illustration.jpg" width="480" alt="Combined Image" />
+
+<img src="report_images/Illustration.JPG" width="480" alt="Illustration" />
 
 1) I defined two ploygons for the left lane and right lane, so that only edges in these polygons are considered as lane lines. I did this in order to eliminate a lot of the tree shadow edges (in the challenge video). 
 2) Edges in the left polygon with slope in (-1.0, -0.5) is considered as left lane line segment. Edges in the right polygon with slope in (0.5, 1.0) is considered as right lane line segment.

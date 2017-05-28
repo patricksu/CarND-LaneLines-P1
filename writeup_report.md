@@ -10,10 +10,6 @@
 The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
-
-
-[//]: # (Image References)
-[image1]: ./examples/grayscale.jpg "Grayscale"
 ---
 
 ### Reflection
@@ -30,8 +26,6 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 <img src="examples/grayscale.jpg" width="480" alt="Combined Image" />
 <img src="report_images/Issue1.png" width="480" alt="Combined Image" />
-
-# ![alt text][image1]
 
 
 ### 2. Identify potential shortcomings with your current pipeline

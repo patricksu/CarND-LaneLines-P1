@@ -47,4 +47,4 @@ As a summary, the current pipeline has parameters that need to be fine-tuned for
 
 A possible improvement would be using a clustering algorithm to better select lane-line segments. 
 Fitting a second-order polynomial to represent the lane lines would work better for curvatures. But this will need more data points.
-Another way of doing lane line detection is Convolution Neural Network, which will need images with annotated lane lines. 
+Another way of doing lane line detection is Convolution Neural Network, which will need images with annotated lane lines as training data. 
